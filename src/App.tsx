@@ -1,3 +1,4 @@
+import { BudgetBage } from "./components/BudgetBadge";
 import { CustomSelect } from "./components/CustomSelect";
 import { Title } from "./components/Title";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Title text="Budget App" />
       <CustomSelect />
+      <BudgetBage />
     </>
   );
 }
