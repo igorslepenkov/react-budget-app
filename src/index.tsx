@@ -7,8 +7,6 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-console.log(AppProvidersCombiner);
-
 root.render(
   <React.StrictMode>
     <AppProvidersCombiner>

@@ -1,5 +1,13 @@
+import { CustomSelect } from "./components/CustomSelect";
+import { Title } from "./components/Title";
+
 function App() {
-  return <div>Hello</div>;
+  return (
+    <>
+      <Title text="Budget App" />
+      <CustomSelect />
+    </>
+  );
 }
 
 export default App;

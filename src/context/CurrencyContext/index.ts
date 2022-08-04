@@ -1,2 +1,6 @@
-import { CurrencyContext, CurrencyProvider } from "./CurrencyContext";
-export { CurrencyContext, CurrencyProvider };
+import {
+  CurrencyContext,
+  CurrencyProvider,
+  useCurrencyContext,
+} from "./CurrencyContext";
+export { CurrencyContext, CurrencyProvider, useCurrencyContext };
