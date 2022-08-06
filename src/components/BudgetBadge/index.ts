@@ -1,2 +1,2 @@
-import { BudgetBage } from "./BudgetBage";
-export { BudgetBage };
+import { BudgetBadge } from "./BudgetBadge";
+export { BudgetBadge };

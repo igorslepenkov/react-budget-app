@@ -3,13 +3,13 @@ import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
 import { useCurrencyContext } from "../../context/CurrencyContext";
 import { useToggle, useInput } from "../../hooks";
 import {
-  BudgetBageButton,
-  BudgetBageinput,
-  BudgetBageTitle,
-  StyledBudgetBage,
+  BudgetBadgeButton,
+  BudgetBadgeinput,
+  BudgetBadgeTitle,
+  StyledBudgetBadge,
 } from "./styles";
 
-export const BudgetBage = () => {
+export const BudgetBadge = () => {
   const { currency } = useCurrencyContext();
   const { budget, changeBudgetValue } = useBudgetContext();
   const [isEditMode, toggleIsEditMode] = useToggle(false);
@@ -27,17 +27,17 @@ export const BudgetBage = () => {
 
   if (!isEditMode) {
     return (
-      <StyledBudgetBage>
-        <BudgetBageTitle>Budget: {currency + budget}</BudgetBageTitle>
-        <BudgetBageButton onClick={handleEditButton}>Edit</BudgetBageButton>
-      </StyledBudgetBage>
+      <StyledBudgetBadge>
+        <BudgetBadgeTitle>Budget: {currency + budget}</BudgetBadgeTitle>
+        <BudgetBadgeButton onClick={handleEditButton}>Edit</BudgetBadgeButton>
+      </StyledBudgetBadge>
     );
   } else {
     return (
-      <StyledBudgetBage>
-        <BudgetBageinput placeholder="Enter budget ..." {...inputOptions} />
-        <BudgetBageButton onClick={handleSaveButton}>Save</BudgetBageButton>
-      </StyledBudgetBage>
+      <StyledBudgetBadge>
+        <BudgetBadgeinput placeholder="Enter budget ..." {...inputOptions} />
+        <BudgetBadgeButton onClick={handleSaveButton}>Save</BudgetBadgeButton>
+      </StyledBudgetBadge>
     );
   }
 };
