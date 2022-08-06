@@ -1,3 +1,5 @@
 import { useToggle } from "./useToggle";
 import { useInput } from "./useInput";
-export { useToggle, useInput };
+import { useRemaining } from "./useRemaining";
+import { useSpent } from "./useSpent";
+export { useToggle, useInput, useRemaining, useSpent };

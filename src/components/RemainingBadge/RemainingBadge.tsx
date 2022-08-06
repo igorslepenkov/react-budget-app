@@ -1,4 +1,4 @@
-import { useRemaining } from "../../hooks/useRemaining";
+import { useRemaining } from "../../hooks";
 import { RemainingBageTitle, StyledRemainingBadge } from "./style";
 
 export const RemainingBadge = () => {
