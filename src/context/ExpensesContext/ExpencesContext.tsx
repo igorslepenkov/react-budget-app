@@ -1,4 +1,4 @@
-import { createContext, FC, ReactNode, useState } from "react";
+import { createContext, FC, ReactNode, useContext, useState } from "react";
 
 interface IExpense {
   id: string;
@@ -37,6 +37,9 @@ const useExpensesValue = () => {
 
   return expencesValue;
 };
+
+export const useExpensesContext = () =>
+  useContext<IExpenseContext>(ExpensesContext);
 
 export const ExpensesProvider: FC<{ children: ReactNode }> = ({ children }) => {
   return (

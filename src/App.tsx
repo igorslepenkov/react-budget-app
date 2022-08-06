@@ -1,5 +1,6 @@
-import { BudgetBage } from "./components/BudgetBadge";
+import { BudgetBadge } from "./components/BudgetBadge";
 import { CustomSelect } from "./components/CustomSelect";
+import { RemainingBadge } from "./components/RemainingBadge";
 import { Title } from "./components/Title";
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <>
       <Title text="Budget App" />
       <CustomSelect />
-      <BudgetBage />
+      <BudgetBadge />
+      <RemainingBadge />
     </>
   );
 }
