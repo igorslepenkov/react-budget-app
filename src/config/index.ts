@@ -1,2 +1,2 @@
-import { Currencies } from "./currency";
-export { Currencies };
+import { Currency } from "./currency";
+export { Currency };

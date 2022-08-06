@@ -1,21 +1,21 @@
 import { createContext, FC, ReactNode, useContext, useState } from "react";
-import { Currencies } from "../../config";
+import { Currency } from "../../config";
 
 interface ICurrencyContext {
   currency: string;
-  setCurrency: (value: Currencies) => void;
+  setCurrency: (value: Currency) => void;
 }
 
 export const CurrencyContext = createContext<ICurrencyContext>({
-  currency: Currencies.USD,
-  setCurrency: (value: Currencies) => {},
+  currency: Currency.USD,
+  setCurrency: (value: Currency) => {},
 });
 
 const useCurrencyValue = () => {
   const [currencyValue, setCurrencyValue] = useState<ICurrencyContext>(() => {
     return {
-      currency: Currencies.USD,
-      setCurrency: (value: Currencies) => {
+      currency: Currency.USD,
+      setCurrency: (value: Currency) => {
         setCurrencyValue((ctx) => {
           return {
             ...ctx,

@@ -1,8 +1,13 @@
 import { ChangeEventHandler, useState } from "react";
 
-export const useInput = (
-  initialValue: string
-): [string, ChangeEventHandler<HTMLInputElement>, () => void] => {
+interface IInputOptions {
+  value: string;
+  onChange: ChangeEventHandler<HTMLInputElement>;
+}
+
+type UseInputHookOutput = [IInputOptions, () => void];
+
+export const useInput = (initialValue: string): UseInputHookOutput => {
   const [inputValue, setinputValue] = useState<string>(initialValue);
   const handleInputChange: ChangeEventHandler<HTMLInputElement> = ({
     target,
@@ -13,5 +18,5 @@ export const useInput = (
     setinputValue("");
   };
 
-  return [inputValue, handleInputChange, clearInput];
+  return [{ value: inputValue, onChange: handleInputChange }, clearInput];
 };

@@ -1,17 +1,17 @@
 import Select, { SingleValue } from "react-select";
-import { Currencies } from "../../config";
+import { Currency } from "../../config";
 import { useCurrencyContext } from "../../context/CurrencyContext";
 
 interface ISelectOption {
-  label: string;
-  value: Currencies;
+  label: keyof typeof Currency;
+  value: Currency;
 }
 
 export const CustomSelect = () => {
   const options: ISelectOption[] = [
-    { label: "USD", value: Currencies.USD },
-    { label: "EUR", value: Currencies.EUR },
-    { label: "GBP", value: Currencies.GBP },
+    { label: "USD", value: Currency.USD },
+    { label: "EUR", value: Currency.EUR },
+    { label: "GBP", value: Currency.GBP },
   ];
 
   const { currency, setCurrency } = useCurrencyContext();

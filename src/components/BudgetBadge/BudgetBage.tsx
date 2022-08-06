@@ -13,10 +13,10 @@ export const BudgetBage = () => {
   const { currency } = useCurrencyContext();
   const { budget, changeBudgetValue } = useBudgetContext();
   const [isEditMode, toggleIsEditMode] = useToggle(false);
-  const [inputValue, setInputValue, clearinput] = useInput("");
+  const [inputOptions, clearinput] = useInput("");
 
   const handleSaveButton: MouseEventHandler<HTMLButtonElement> = () => {
-    changeBudgetValue(Number(inputValue));
+    changeBudgetValue(Number(inputOptions.value));
     toggleIsEditMode();
     clearinput();
   };
@@ -35,11 +35,7 @@ export const BudgetBage = () => {
   } else {
     return (
       <StyledBudgetBage>
-        <BudgetBageinput
-          placeholder="Enter budget ..."
-          value={inputValue}
-          onChange={setInputValue}
-        />
+        <BudgetBageinput placeholder="Enter budget ..." {...inputOptions} />
         <BudgetBageButton onClick={handleSaveButton}>Save</BudgetBageButton>
       </StyledBudgetBage>
     );
