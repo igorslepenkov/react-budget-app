@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fonts } from "../../ui";
 
 interface IProps {
   areaName?: string;
@@ -16,33 +17,21 @@ export const StyledBudgetBadge = styled.section<IProps>`
 
 export const BudgetBadgeTitle = styled.h3`
   margin: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  ${fonts.f2}
 `;
 
 export const BudgetBadgeButton = styled.button`
   padding: 10px 30px;
   border: none;
   border-radius: 10px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  ${fonts.f3}
 `;
 
 export const BudgetBadgeinput = styled.input`
   width: 100%;
   padding: 0;
   color: #ffffff;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  ${fonts.f2}
   outline: none;
   border: none;
   background-color: transparent;

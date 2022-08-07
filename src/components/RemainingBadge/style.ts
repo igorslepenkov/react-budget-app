@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fonts } from "../../ui";
 
 interface IProps {
   isOverspend: boolean;
@@ -16,9 +17,5 @@ export const StyledRemainingBadge = styled.section<IProps>`
 
 export const RemainingBageTitle = styled.h3`
   margin: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  ${fonts.f2}
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fonts } from "../../ui";
 
 interface IProps {
   areaName?: string;
@@ -6,7 +7,5 @@ interface IProps {
 
 export const StyledTitle = styled.h2<IProps>`
   ${(props) => (props.areaName ? `grid-area: ${props.areaName};` : "")}
-  font-size: 24px;
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
+  ${fonts.f1}
 `;
