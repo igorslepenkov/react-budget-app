@@ -35,4 +35,9 @@ export const BudgetBadgeinput = styled.input`
   outline: none;
   border: none;
   background-color: transparent;
+
+  &::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
 `;
