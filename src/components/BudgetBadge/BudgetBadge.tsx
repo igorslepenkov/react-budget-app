@@ -9,7 +9,11 @@ import {
   StyledBudgetBadge,
 } from "./styles";
 
-export const BudgetBadge = () => {
+interface IProps {
+  areaName?: string;
+}
+
+export const BudgetBadge = ({ areaName }: IProps) => {
   const { currency } = useCurrencyContext();
   const { budget, changeBudgetValue } = useBudgetContext();
   const [isEditMode, toggleIsEditMode] = useToggle(false);
@@ -27,15 +31,17 @@ export const BudgetBadge = () => {
 
   if (!isEditMode) {
     return (
-      <StyledBudgetBadge>
+      <StyledBudgetBadge areaName={areaName}>
         <BudgetBadgeTitle>Budget: {currency + budget}</BudgetBadgeTitle>
         <BudgetBadgeButton onClick={handleEditButton}>Edit</BudgetBadgeButton>
       </StyledBudgetBadge>
     );
   } else {
     return (
-      <StyledBudgetBadge>
-        <BudgetBadgeinput placeholder="Enter budget ..." {...inputOptions} />
+      <StyledBudgetBadge areaName={areaName}>
+        <span>
+          <BudgetBadgeinput placeholder="Enter budget ..." {...inputOptions} />
+        </span>
         <BudgetBadgeButton onClick={handleSaveButton}>Save</BudgetBadgeButton>
       </StyledBudgetBadge>
     );

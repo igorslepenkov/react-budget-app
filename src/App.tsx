@@ -1,17 +1,9 @@
-import { BudgetBadge } from "./components/BudgetBadge";
-import { CustomSelect } from "./components/CustomSelect";
-import { RemainingBadge } from "./components/RemainingBadge";
-import { SpentBadge } from "./components/SpentBadge";
-import { Title } from "./components/Title";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <>
-      <Title text="Budget App" />
-      <CustomSelect />
-      <BudgetBadge />
-      <RemainingBadge />
-      <SpentBadge />
+      <Header />
     </>
   );
 }
