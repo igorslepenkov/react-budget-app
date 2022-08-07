@@ -11,7 +11,7 @@ export const SpentBadge = ({ areaName }: IProps) => {
   const { currency } = useCurrencyContext();
   return (
     <StyledSpentBadge areaName={areaName}>
-      <SpentBadgeTitle>Spent so far {currency + spent}</SpentBadgeTitle>
+      <SpentBadgeTitle>Spent so far: {currency + spent}</SpentBadgeTitle>
     </StyledSpentBadge>
   );
 };

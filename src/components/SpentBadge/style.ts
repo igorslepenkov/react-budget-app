@@ -15,7 +15,9 @@ export const StyledSpentBadge = styled.section<IProps>`
 
 export const SpentBadgeTitle = styled.h3`
   margin: 0;
-  font-size: 20px;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
 `;
