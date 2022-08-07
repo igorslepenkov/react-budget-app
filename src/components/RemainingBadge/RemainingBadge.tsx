@@ -13,7 +13,7 @@ export const RemainingBadge = ({ areaName }: IProps) => {
     <StyledRemainingBadge isOverspend={remaining < 0} areaName={areaName}>
       <RemainingBageTitle>
         {remaining < 0
-          ? `Overspending: ${currency + remaining}`
+          ? `Overspending: ${currency + remaining * -1}`
           : `Remaining: ${currency + remaining}`}
       </RemainingBageTitle>
     </StyledRemainingBadge>

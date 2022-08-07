@@ -13,6 +13,7 @@ export const StyledRemainingBadge = styled.section<IProps>`
   padding: 40px 10px;
   background-color: ${(props) => (props.isOverspend ? "#FF0000" : "#CCD5FF")};
   border-radius: 10px;
+  ${(props) => (props.isOverspend ? "color: #ffffff;" : "")}
 `;
 
 export const RemainingBageTitle = styled.h3`
