@@ -1,14 +1,30 @@
-import { useExpensesContext } from "../../context/ExpensesContext";
-import { StyledExpensesList } from "./style";
+import { StyledExpensesList, StyledExpensesListPlaceholder } from "./style";
 import { ExpensesListItem } from "../ExpensesListItem";
+import { IExpense } from "../../context/ExpensesContext";
 
-export const ExpensesList = () => {
-  const { expenses } = useExpensesContext();
-  return (
-    <StyledExpensesList>
-      {expenses.map((expense) => {
-        return <ExpensesListItem key={expense.id} expense={expense} />;
-      })}
-    </StyledExpensesList>
-  );
+interface IProps {
+  visibleExpenses: IExpense[];
+  deleteExpense: (id: string) => void;
+}
+
+export const ExpensesList = ({ visibleExpenses, deleteExpense }: IProps) => {
+  if (visibleExpenses) {
+    return (
+      <StyledExpensesList>
+        {visibleExpenses.map((expense) => {
+          return (
+            <ExpensesListItem
+              key={expense.id}
+              expense={expense}
+              deleteExpense={deleteExpense}
+            />
+          );
+        })}
+      </StyledExpensesList>
+    );
+  } else {
+    return (
+      <StyledExpensesListPlaceholder>Oooops 🙈</StyledExpensesListPlaceholder>
+    );
+  }
 };

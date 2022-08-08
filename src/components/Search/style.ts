@@ -9,4 +9,9 @@ export const StyledSearch = styled.input`
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   ${fonts.f4}
+
+  &::placeholder {
+    color: #999999;
+    opacity: 1;
+  }
 `;
