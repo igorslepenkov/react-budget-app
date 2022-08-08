@@ -8,14 +8,13 @@ interface IProps {
 }
 
 export const Search = ({ searchExpenses }: IProps) => {
-  const [{ value, onChange }] = useInput("");
+  const [inputStateConfig] = useInput("");
+  const { value } = inputStateConfig;
   const debouncedValue = useDebounce(value, 500);
 
   useEffect(() => {
     searchExpenses(debouncedValue);
-  }, [debouncedValue, searchExpenses]);
+  }, [searchExpenses, debouncedValue]);
 
-  return (
-    <StyledSearch placeholder="search ..." onChange={onChange} value={value} />
-  );
+  return <StyledSearch placeholder="search ..." {...inputStateConfig} />;
 };
