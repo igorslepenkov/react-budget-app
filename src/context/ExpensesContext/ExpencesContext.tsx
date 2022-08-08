@@ -8,10 +8,14 @@ interface IExpense {
 
 interface IExpenseContext {
   expenses: IExpense[];
+  setExpenses: (value: IExpense) => void;
+  deleteExpence: (id: string) => void;
 }
 
 export const ExpensesContext = createContext<IExpenseContext>({
   expenses: [],
+  setExpenses: (value: IExpense) => {},
+  deleteExpence: (id: string) => {},
 });
 
 const useExpensesValue = () => {

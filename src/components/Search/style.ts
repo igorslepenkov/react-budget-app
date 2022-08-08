@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { fonts } from "../../ui";
 
 export const StyledSearch = styled.input`
-  width: 100%;
+  display: block;
   padding: 15px 20px;
   outline: none;
   border: none;
