@@ -8,7 +8,8 @@ export const useVisibleExpenses = () => {
     (searchPattern: string): void => {
       setVisibleExpenses(() => {
         return expenses.filter(
-          (expense) => !!expense.body.match(searchPattern)
+          (expense) =>
+            !!expense.body.toLowerCase().match(searchPattern.toLowerCase())
         );
       });
     },
