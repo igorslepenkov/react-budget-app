@@ -12,7 +12,7 @@ export const Expenses = () => {
   return (
     <StyledExpenses>
       <Title text="Expenses" />
-      <Search searchExpenses={searchExpenses} />
+      {/* <Search searchExpenses={searchExpenses} /> */}
       <ExpensesList
         deleteExpense={deleteExpence}
         visibleExpenses={visibleExpenses}
