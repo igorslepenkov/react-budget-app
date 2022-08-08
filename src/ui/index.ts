@@ -1,2 +1,4 @@
 import { fonts } from "./fonts";
-export { fonts };
+import { GlobalStyles } from "./globalStyles";
+import { Media } from "./media";
+export { fonts, GlobalStyles, Media };
