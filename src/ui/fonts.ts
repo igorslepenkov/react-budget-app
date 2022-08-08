@@ -32,4 +32,12 @@ const f4 = css`
   line-height: 19px;
 `;
 
-export const fonts = { f1, f2, f3, f4 };
+const f5 = css`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+`;
+
+export const fonts = { f1, f2, f3, f4, f5 };

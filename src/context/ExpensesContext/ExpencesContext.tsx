@@ -1,12 +1,12 @@
 import { createContext, FC, ReactNode, useContext, useState } from "react";
 
-interface IExpense {
+export interface IExpense {
   id: string;
   body: string;
   cost: number;
 }
 
-interface IExpenseContext {
+export interface IExpenseContext {
   expenses: IExpense[];
   setExpenses: (value: IExpense) => void;
   deleteExpence: (id: string) => void;
@@ -20,7 +20,7 @@ export const ExpensesContext = createContext<IExpenseContext>({
 
 const useExpensesValue = () => {
   const [expencesValue, setExpencesValue] = useState<IExpenseContext>(() => ({
-    expenses: [],
+    expenses: [{ id: "string", body: "string", cost: 10 }],
     setExpenses: (value: IExpense) => {
       setExpencesValue((ctx) => {
         return {
