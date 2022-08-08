@@ -15,9 +15,20 @@ export const AddExpenseFormInput = styled.input`
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   ${fonts.f4}
+
   &::placeholder {
     color: #999999;
     opacity: 1;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
   }
 `;
 
@@ -29,4 +40,11 @@ export const AddExpenseFormButton = styled.button`
   ${fonts.f4}
   border: none;
   border-radius: 10px;
+`;
+
+export const AddExpenseFormError = styled.p`
+  margin-top: 0;
+  margin-left: 10px;
+  color: #ff0000;
+  ${fonts.f5}
 `;
