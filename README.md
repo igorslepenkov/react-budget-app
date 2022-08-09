@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/igorslepenkov/react-budget-app">
+    <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+  <h3 align="center">Budget App</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    React budget app with Typescript, Styled Components, React Hook Forms and React-Select library!
+  </p>
+</div>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About The Project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![React tips screenshot](src/assets/screenshot.png)
 
-### `npm test`
+Educational project in order to get used to building SPA via React with Typescript's typing and Styled Components styles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build`
+### Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [![React][react.js]][react-url]
+- [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+- ![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)
+- [react-select](https://github.com/JedWatson/react-select)
+- [react-hook-forms](https://react-hook-form.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+```
+You will need installed Node package manager(npm) on your computer.
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 1. Clone application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+git clone https://github.com/igorslepenkov/react-budget-app.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### 2. Intall dependencies
 
-## Learn More
+```
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 3. Run application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
+
+## Contact
+
+Igor Slepenkov - [My LinkedIn](https://www.linkedin.com/in/%D0%B8%D0%B3%D0%BE%D1%80%D1%8C-%D1%81%D0%BB%D0%B5%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2-b17704198)
+
+Project Link: [https://github.com/igorslepenkov/react-budget-app](https://github.com/igorslepenkov/react-budget-app)
+
+Deploy link: [https://igorslepenkov.github.io/react-budget-app/](https://igorslepenkov.github.io/react-budget-app/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
