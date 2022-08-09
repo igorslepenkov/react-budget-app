@@ -9,6 +9,9 @@ export const StyledExpensesList = styled.ul`
 `;
 
 export const StyledExpensesListPlaceholder = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 250px;
   ${fonts.f2}
 `;

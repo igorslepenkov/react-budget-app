@@ -8,7 +8,7 @@ interface IProps {
 }
 
 export const ExpensesList = ({ visibleExpenses, deleteExpense }: IProps) => {
-  if (visibleExpenses) {
+  if (visibleExpenses.length !== 0) {
     return (
       <StyledExpensesList>
         {visibleExpenses.map((expense) => {
@@ -22,9 +22,9 @@ export const ExpensesList = ({ visibleExpenses, deleteExpense }: IProps) => {
         })}
       </StyledExpensesList>
     );
-  } else {
-    return (
-      <StyledExpensesListPlaceholder>Oooops 🙈</StyledExpensesListPlaceholder>
-    );
   }
+
+  return (
+    <StyledExpensesListPlaceholder>Oooops 🙈</StyledExpensesListPlaceholder>
+  );
 };
