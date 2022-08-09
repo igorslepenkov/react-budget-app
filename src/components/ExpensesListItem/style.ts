@@ -10,8 +10,10 @@ export const StyledExpensesListItem = styled.li`
 `;
 
 export const ExpensesListItemCost = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px 15px;
-  text-align: center;
   background: #23c9ff;
   border-radius: 10px;
   ${fonts.f5};
